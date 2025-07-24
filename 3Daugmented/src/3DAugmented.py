@@ -139,8 +139,7 @@ def parse_color(color_str):
 parser = argparse.ArgumentParser(description='Augmented reality using ArUco markers')
 parser.add_argument('--draw-marker', action='store_true', help='Draw detected ArUco marker borders')
 parser.add_argument('--draw-axis', action='store_true', help='Draw coordinate axes on detected markers')
-parser.add_argument('--object-scale', type=float, default=0.0032,
-                    help='Scaling factor for the 3D object (default: 0.005)')
+parser.add_argument('--object-scale', type=float, default=0.0032, help='Scaling factor for the 3D object (default: 0.005)')
 parser.add_argument('--color', type=str, default='red', help='Object color (e.g., red, blue, #FF0000, or black)')
 args = parser.parse_args()
 
